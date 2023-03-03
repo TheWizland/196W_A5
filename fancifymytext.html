@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+
+		<!-- link to your script file here -->
+		<script src = "fancifymytext.js"></script>
+		<link rel="stylesheet" href="fancifymytext.css">
+		
+	</head>
+
+	<body>
+		<h1>Fancify my Text</h1>
+		
+		
+		<form>
+			<label for="text_area">Text</label> <br>
+			<textarea rows="4" columns="30" id="text_area"></textarea> <br>
+		</form>
+		<!-- Your UI controls go here -->
+		<br>
+
+		<form>
+			<button type="button" onclick="biggerText()">Bigger!</button> <br>
+			<input type="radio" name="WeightRadio" value="FancyShmancy" onchange="setTextWeight(true)"> FancyShmancy <br>
+			<input type="radio" name="WeightRadio" value="BoringBetty" onchange="setTextWeight(false)"> BoringBetty <br>
+			<input type="checkbox" name="ColorUnderline" value="ColorToggle" onchange="toggleColor()"> Fancify <br>
+			<button type="button" onclick="moo()">Moo</button> <br>
+		</form>
+		
+	</body>
+</html>
